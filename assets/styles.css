@@ -32,7 +32,7 @@ a {
   min-height: 0;
   display: flex;
   align-items: flex-start;
-  padding: 30px 20px 28px;
+  padding: 30px 20px 22px;
   color: #fff;
   background:
     linear-gradient(180deg, rgba(10, 17, 28, .54), rgba(10, 17, 28, .74)),
@@ -133,8 +133,25 @@ main,
 }
 
 .scenario-card {
+  position: relative;
   display: block;
-  padding: 20px;
+  padding: 20px 54px 20px 20px;
+}
+
+.scenario-card::after {
+  content: "→";
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(25, 103, 210, .1);
+  color: var(--accent);
+  font-size: 17px;
+  font-weight: 900;
 }
 
 .scenario-card h2,
