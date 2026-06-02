@@ -1,38 +1,55 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Studio Collections - Spring Lens Journal</title>
+  <title>多工作区浏览 - PicRover 操作引导</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-gallery="workspace">
   <header class="page-header">
-    <a class="back-link" href="index.html">Spring Lens Journal</a>
-    <h1>Studio Collections</h1>
-    <p>Open each collection separately to compare mood, palette, and composition across the spring archive.</p>
+    <a class="back-link" href="index.html">PicRover 操作引导</a>
+    <h1>多工作区浏览</h1>
+    <p>长按链接可在新工作区打开；底部滑动切换工作区，也可以随时新增，多个页面互不影响。</p>
   </header>
 
   <main>
+    <section class="guide-panel">
+      <p class="eyebrow">在 PicRover 里这样操作</p>
+      <ol class="guide-steps">
+        <li><strong>长按下方任一链接</strong><span>在 PicRover 的网页内长按链接，选择在新工作区打开。</span></li>
+        <li><strong>切换工作区</strong><span>使用底部工作区入口在多个页面间切换，每个工作区保留自己的网页、识别结果和下载状态。</span></li>
+        <li><strong>分别识别不同页面</strong><span>在每个工作区独立点击识别，确认多个页面互不影响。</span></li>
+      </ol>
+    </section>
+
+    <section class="feature-band feature-band--guide">
+      <div>
+        <p class="eyebrow">本页测试效果</p>
+        <h2>下方链接指向不同图片集合，适合验证长按打开新工作区和多页面并行浏览。</h2>
+        <p>你可以把工作区示例 A 和工作区示例 B 分别放进不同工作区，再各自识别图片。</p>
+      </div>
+    </section>
+
     <section class="link-lab">
       <a class="story-link" href="workspace-link-a.html">
-        <span>Collection A</span>
-        <strong>Urban Objects and Studio Corners</strong>
+        <span>工作区示例 A</span>
+        <strong>长按我，在新工作区打开第一组图片</strong>
       </a>
       <a class="story-link" href="workspace-link-b.html">
-        <span>Collection B</span>
-        <strong>Landscapes and Portrait Studies</strong>
+        <span>工作区示例 B</span>
+        <strong>长按我，在新工作区打开第二组图片</strong>
       </a>
       <a class="story-link" href="similar.html">
-        <span>Related Feature</span>
-        <strong>Linked Photo Stories</strong>
+        <span>连续图集入口</span>
+        <strong>打开排队下载相似图集的引导页</strong>
       </a>
     </section>
 
     <section class="gallery-section">
       <div class="section-heading">
-        <h2>Featured Studio Images</h2>
-        <p>A compact selection from the studio archive for quick browsing.</p>
+        <h2>当前工作区图片</h2>
+        <p>这里也保留了一组可识别图片，用来确认当前工作区的识别结果不会影响其他工作区。</p>
       </div>
       <div class="gallery-grid gallery-grid--small" data-gallery-mount></div>
     </section>

@@ -1,32 +1,49 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Linked Photo Stories - Spring Lens Journal</title>
+  <title>排队下载相似图集 - PicRover 操作引导</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-gallery="similarPreview">
   <header class="page-header">
-    <a class="back-link" href="index.html">Spring Lens Journal</a>
-    <h1>Linked Photo Stories</h1>
-    <p>Six related chapters from the same spring feature, organized as a numbered collection.</p>
+    <a class="back-link" href="index.html">PicRover 操作引导</a>
+    <h1>排队下载相似图集</h1>
+    <p>遇到连续图集时，长按其中一个链接搜索同类页面；确认后会排队逐个打开、识别并下载。</p>
   </header>
 
   <main>
+    <section class="guide-panel">
+      <p class="eyebrow">在 PicRover 里这样操作</p>
+      <ol class="guide-steps">
+        <li><strong>长按任一章节链接</strong><span>选择搜索同类页面，PicRover 会尝试找到同一组连续图集链接。</span></li>
+        <li><strong>确认排队列表</strong><span>检查识别出的章节是否符合预期，确认后开始排队处理。</span></li>
+        <li><strong>自动打开并下载</strong><span>PicRover 会逐个打开相似页面，识别页面图片并下载到下载管理。</span></li>
+      </ol>
+    </section>
+
+    <section class="feature-band feature-band--guide">
+      <div>
+        <p class="eyebrow">本页测试效果</p>
+        <h2>下方 6 个链接采用相同结构和编号，适合模拟连续图集。</h2>
+        <p>长按其中一个章节链接后，PicRover 应该能把同组链接一起纳入队列。</p>
+      </div>
+    </section>
+
     <section class="story-list">
-      <a href="sets/story-01.html" class="story-link" data-series="met-story"><span>Chapter 01</span><strong>Flowers and Open Air</strong></a>
-      <a href="sets/story-02.html" class="story-link" data-series="met-story"><span>Chapter 02</span><strong>Tabletop Light</strong></a>
-      <a href="sets/story-03.html" class="story-link" data-series="met-story"><span>Chapter 03</span><strong>Garden Paths</strong></a>
-      <a href="sets/story-04.html" class="story-link" data-series="met-story"><span>Chapter 04</span><strong>Portraits in Soft Color</strong></a>
-      <a href="sets/story-05.html" class="story-link" data-series="met-story"><span>Chapter 05</span><strong>Small Details</strong></a>
-      <a href="sets/story-06.html" class="story-link" data-series="met-story"><span>Chapter 06</span><strong>Last Light</strong></a>
+      <a href="sets/story-01.html" class="story-link" data-series="met-story"><span>图集章节 01</span><strong>长按我，搜索同类页面</strong></a>
+      <a href="sets/story-02.html" class="story-link" data-series="met-story"><span>图集章节 02</span><strong>同组连续页面，适合加入队列</strong></a>
+      <a href="sets/story-03.html" class="story-link" data-series="met-story"><span>图集章节 03</span><strong>同组连续页面，适合加入队列</strong></a>
+      <a href="sets/story-04.html" class="story-link" data-series="met-story"><span>图集章节 04</span><strong>同组连续页面，适合加入队列</strong></a>
+      <a href="sets/story-05.html" class="story-link" data-series="met-story"><span>图集章节 05</span><strong>同组连续页面，适合加入队列</strong></a>
+      <a href="sets/story-06.html" class="story-link" data-series="met-story"><span>图集章节 06</span><strong>同组连续页面，适合加入队列</strong></a>
     </section>
 
     <section class="gallery-section">
       <div class="section-heading">
-        <h2>Story Preview</h2>
-        <p>A small preview from the linked collection before opening a full chapter.</p>
+        <h2>队列预览图片</h2>
+        <p>这些图片用于预览连续图集的内容。进入任一章节后，还可以继续测试页面内图片识别。</p>
       </div>
       <div class="gallery-grid gallery-grid--small" data-gallery-mount></div>
     </section>

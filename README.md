@@ -1,35 +1,39 @@
-# Spring Lens Journal Local Site
+# PicRover Guide Demo Site
 
-This is a local static photography site used by PicRover for bundled webpage testing.
+This is a static demo site used for PicRover review and manual testing. It
+contains guide pages for the first three PicRover user-guide flows:
+
+- Recognize and download images.
+- Browse with multiple workspaces.
+- Queue and download similar gallery pages.
 
 ## How to Use
 
-Open `index.html` directly in a browser, or copy the whole `PicRoverGuideDemoSite`
-folder into the iOS app bundle and open the entry HTML by local file URL.
-
-If you add it to Xcode, prefer dragging the whole folder as a folder reference
-(blue folder) and make sure it is included in the PicRover target resources.
-That keeps `assets/` and `sets/` relative links intact.
+Open `index.html` directly in a browser, publish the folder with GitHub Pages,
+or paste the published URL into PicRover.
 
 The site has no build step and no external JavaScript, CSS, or remote image
-dependency. Put the local photo archive in `images/` before opening the pages.
+dependency. Keep `assets/`, `images/`, and `sets/` together so relative links
+continue to work.
+
+## Demo Pages
+
+- `index.html`: guide landing page with three PicRover flows.
+- `basic.html`: image recognition and download guide.
+- `workspace.html`: multi-workspace browsing guide.
+- `similar.html`: similar gallery queue guide.
+- `basic-page-2.html` and `basic-page-3.html`: continuation pages for testing
+  next-page flows.
+- `sets/story-*.html`: numbered pages for testing queued similar galleries.
 
 ## Images
 
-Add local images using this naming pattern:
+Local images use this naming pattern:
 
 - `images/guide-001.jpg`
 - `images/guide-002.jpg`
 - ...
 - `images/guide-100.jpg`
 
-The default extension is `.jpg`. If you prefer `.png` or `.webp`, change
+The default extension is `.jpg`. If you change the image format, update
 `imageExtension` at the top of `assets/demo-data.js`.
-
-## Pages
-
-- `basic.html`: a multi-page spring editorial.
-- `workspace.html`: companion studio collections.
-- `similar.html`: linked numbered story chapters.
-- `playback.html`: a portrait-heavy review collection.
-- `batch.html`: an editorial selection set.

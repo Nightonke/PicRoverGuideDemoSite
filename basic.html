@@ -1,31 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Spring Field Notes - Spring Lens Journal</title>
+  <title>识别并下载图片 - PicRover 操作引导</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body data-gallery="basic1">
   <header class="page-header">
-    <a class="back-link" href="index.html">Spring Lens Journal</a>
-    <h1>Spring Field Notes</h1>
-    <p>A three-part collection of flowers, tabletops, and calm outdoor scenes gathered for the first spring issue.</p>
+    <a class="back-link" href="index.html">PicRover 操作引导</a>
+    <h1>识别并下载图片</h1>
+    <p>输入网页后，点击识别找到页面图片；选择需要的图片即可下载。连续图集可开启自动下一页。</p>
   </header>
 
   <main>
-    <section class="feature-band">
+    <section class="guide-panel">
+      <p class="eyebrow">在 PicRover 里这样操作</p>
+      <ol class="guide-steps">
+        <li><strong>打开本页地址</strong><span>在任意工作区输入或粘贴当前 URL，等待页面加载完成。</span></li>
+        <li><strong>点击底部识别按钮</strong><span>首次识别时选择快速识别或深度识别；深度识别会滚动页面，发现更多 lazy load 图片。</span></li>
+        <li><strong>选择并下载</strong><span>打开图片面板，勾选需要的图片，点击下载选中后可在下载管理里查看文件夹。</span></li>
+      </ol>
+    </section>
+
+    <section class="feature-band feature-band--guide">
       <div>
-        <p class="eyebrow">Basic Flow</p>
-        <h2>The opening chapter pairs visible image grids with background details and a continuing story link.</h2>
+        <p class="eyebrow">本页测试效果</p>
+        <h2>页面包含可见图片、懒加载图片、背景图片和下一页链接，适合验证 PicRover 的基础识别流程。</h2>
+        <p>识别完成后，图片面板里应该能看到下方图集；继续打开下一章时，可以测试连续图集和自动下一页。</p>
       </div>
-      <a class="button button--primary" rel="next" href="basic-page-2.html">Continue Reading</a>
+      <a class="button button--primary" rel="next" href="basic-page-2.html">打开下一章</a>
     </section>
 
     <section class="gallery-section">
       <div class="section-heading">
-        <h2>Flowers and Still Life</h2>
-        <p>Soft arrangements, warm surfaces, and small details from the season's first shoot.</p>
+        <h2>可识别图片区域</h2>
+        <p>这些图片会被 PicRover 扫描到。你可以先选一张作为样本，再使用选同组扩选相似图片。</p>
       </div>
       <div class="gallery-grid" data-gallery-mount></div>
     </section>
@@ -33,8 +43,8 @@
     <section class="background-row" data-background-row="landscape"></section>
 
     <nav class="pager">
-      <a href="index.html">Home</a>
-      <a rel="next" href="basic-page-2.html">Next Chapter</a>
+      <a href="index.html">返回引导首页</a>
+      <a rel="next" href="basic-page-2.html">下一章</a>
     </nav>
   </main>
 
