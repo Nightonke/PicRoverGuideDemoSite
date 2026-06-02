@@ -29,10 +29,10 @@ a {
 }
 
 .hero {
-  min-height: 64vh;
+  min-height: 42vh;
   display: flex;
   align-items: flex-end;
-  padding: 64px 20px 38px;
+  padding: 20px 20px 28px;
   color: #fff;
   background:
     linear-gradient(180deg, rgba(10, 17, 28, .08), rgba(10, 17, 28, .78)),
@@ -83,7 +83,6 @@ main,
   color: #9ae6b4;
 }
 
-.hero__actions,
 .pager {
   display: flex;
   gap: 12px;
@@ -365,7 +364,17 @@ main,
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 58vh;
+    min-height: 34vh;
+    padding-top: 12px;
+    padding-bottom: 22px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero .lead {
+    font-size: 16px;
   }
 
   .feature-band,
