@@ -112,7 +112,7 @@
       '适合测试同一页面内多个图片区域的扫描结果。': 'Useful for testing scan results across multiple image sections on one page.',
 
       '示例图片': 'Image',
-      'PicRover 示例图库': 'PicRover Demo Gallery',
+      'PicRover 示例图库': 'PicRover Gallery',
       '添加本地图片': 'Add local image',
       '中文': 'Chinese',
       'English': 'English'
@@ -123,6 +123,7 @@
       'Demo Image': '示例图片',
       'Spring Lens Archive': 'PicRover 示例图库',
       'PicRover Demo Gallery': 'PicRover 示例图库',
+      'PicRover Gallery': 'PicRover 示例图库',
       'Add local image': '添加本地图片',
       'Chinese': '中文'
     }
@@ -167,7 +168,7 @@
     return text
       .replace(/^Spring Frame (\d{3})$/, 'Image $1')
       .replace(/^示例图片 (\d{3})$/, 'Image $1')
-      .replace(/^PicRover 示例图库$/, 'PicRover Demo Gallery')
+      .replace(/^PicRover 示例图库$/, 'PicRover Gallery')
       .replace(/^添加本地图片$/, 'Add local image');
   }
 
