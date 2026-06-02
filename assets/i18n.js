@@ -234,7 +234,17 @@
       if (!button) return;
       setLanguage(button.dataset.language);
     });
-    document.body.appendChild(switcher);
+    const mount = document.querySelector('[data-language-switcher]');
+    if (mount) {
+      mount.appendChild(switcher);
+    } else {
+      const pageHeader = document.querySelector('.page-header');
+      if (pageHeader) {
+        pageHeader.insertBefore(switcher, pageHeader.firstChild);
+      } else {
+        document.body.insertBefore(switcher, document.body.firstChild);
+      }
+    }
     updateLanguageToggle(language);
   }
 

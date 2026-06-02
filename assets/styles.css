@@ -29,16 +29,12 @@ a {
 }
 
 .language-switcher {
-  position: fixed;
-  z-index: 20;
-  top: max(10px, env(safe-area-inset-top));
-  right: 10px;
   display: flex;
+  flex: 0 0 auto;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, .5);
   border-radius: 8px;
   background: rgba(255, 255, 255, .82);
-  box-shadow: 0 8px 24px rgba(22, 32, 51, .16);
   backdrop-filter: blur(14px);
 }
 
@@ -62,6 +58,24 @@ a {
 .language-switcher button.is-active {
   background: var(--accent);
   color: #fff;
+}
+
+.hero__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hero__top .eyebrow {
+  min-width: 0;
+}
+
+.page-header > .language-switcher {
+  width: fit-content;
+  margin: 0 0 14px auto;
+  border-color: var(--line);
+  background: var(--card);
 }
 
 .hero {
