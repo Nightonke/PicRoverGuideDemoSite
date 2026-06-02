@@ -16,6 +16,12 @@ The site has no build step and no external JavaScript, CSS, or remote image
 dependency. Keep `assets/`, `images/`, and `sets/` together so relative links
 continue to work.
 
+## Localization
+
+The site supports Simplified Chinese and English. It picks a language from
+`?lang=zh` or `?lang=en`, then saved `localStorage`, then the browser language.
+Users can also switch language from the top-right toggle.
+
 ## Demo Pages
 
 - `index.html`: guide landing page with three PicRover flows.
