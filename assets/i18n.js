@@ -111,7 +111,7 @@
       '补充图片集合': 'Additional Image Set',
       '适合测试同一页面内多个图片区域的扫描结果。': 'Useful for testing scan results across multiple image sections on one page.',
 
-      '示例图片': 'Demo Image',
+      '示例图片': 'Image',
       'PicRover 示例图库': 'PicRover Demo Gallery',
       '添加本地图片': 'Add local image',
       '中文': 'Chinese',
@@ -119,6 +119,7 @@
     },
     zh: {
       'Spring Frame': '示例图片',
+      'Image': '示例图片',
       'Demo Image': '示例图片',
       'Spring Lens Archive': 'PicRover 示例图库',
       'PicRover Demo Gallery': 'PicRover 示例图库',
@@ -160,11 +161,12 @@
     if (language === 'zh') {
       return text
         .replace(/^Spring Frame (\d{3})$/, '示例图片 $1')
-        .replace(/^Demo Image (\d{3})$/, '示例图片 $1');
+        .replace(/^Demo Image (\d{3})$/, '示例图片 $1')
+        .replace(/^Image (\d{3})$/, '示例图片 $1');
     }
     return text
-      .replace(/^Spring Frame (\d{3})$/, 'Demo Image $1')
-      .replace(/^示例图片 (\d{3})$/, 'Demo Image $1')
+      .replace(/^Spring Frame (\d{3})$/, 'Image $1')
+      .replace(/^示例图片 (\d{3})$/, 'Image $1')
       .replace(/^PicRover 示例图库$/, 'PicRover Demo Gallery')
       .replace(/^添加本地图片$/, 'Add local image');
   }
