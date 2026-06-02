@@ -33,7 +33,7 @@
     link.appendChild(img);
 
     const caption = document.createElement('figcaption');
-    caption.innerHTML = `<strong>${item.title}</strong><span>${item.creator}</span>`;
+    caption.innerHTML = `<strong>${item.title}</strong>`;
     figure.appendChild(link);
     figure.appendChild(caption);
     return figure;

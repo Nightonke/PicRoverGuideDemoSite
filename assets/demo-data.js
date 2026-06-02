@@ -8,7 +8,7 @@
   function localImage(index, titlePrefix) {
     const number = pad(index);
     return {
-      title: `${titlePrefix} ${number}`,
+      title: number,
       creator: 'Spring Lens Archive',
       file: `guide-${number}.${imageExtension}`
     };
