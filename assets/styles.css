@@ -29,13 +29,13 @@ a {
 }
 
 .hero {
-  min-height: 42vh;
+  min-height: 0;
   display: flex;
-  align-items: flex-end;
-  padding: 20px 20px 28px;
+  align-items: flex-start;
+  padding: 30px 20px 28px;
   color: #fff;
   background:
-    linear-gradient(180deg, rgba(10, 17, 28, .08), rgba(10, 17, 28, .78)),
+    linear-gradient(180deg, rgba(10, 17, 28, .54), rgba(10, 17, 28, .74)),
     url("../images/guide-051.jpg") center / cover;
 }
 
@@ -364,9 +364,8 @@ main,
 
 @media (max-width: 640px) {
   .hero {
-    min-height: 34vh;
-    padding-top: 12px;
-    padding-bottom: 22px;
+    padding-top: 18px;
+    padding-bottom: 20px;
   }
 
   .hero h1 {
