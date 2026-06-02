@@ -3,7 +3,7 @@
 This is a static demo site used for PicRover review and manual testing. It
 contains guide pages for the first three PicRover user-guide flows:
 
-- Recognize and download images.
+- Scan and download images.
 - Browse with multiple workspaces.
 - Queue and download similar gallery pages.
 
@@ -25,7 +25,7 @@ Users can also switch language from the top-right toggle.
 ## Demo Pages
 
 - `index.html`: guide landing page with three PicRover flows.
-- `basic.html`: image recognition and download guide.
+- `basic.html`: image scanning and download guide.
 - `workspace.html`: multi-workspace browsing guide.
 - `similar.html`: similar gallery queue guide.
 - `basic-page-2.html` and `basic-page-3.html`: continuation pages for testing
